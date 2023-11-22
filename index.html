@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GitHub Finder</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo">
+        <a href="./"><h1>GitHub Finder</h1></a>
+    </div>
+</header>
+<div class="search">
+    <h1 class="search-title">Search Github Users</h1>
+    <p class="search-body">Enter a username to fetch a user profile and repos</p>
+    <label>
+        <input class="search-input" type="text">
+    </label>
+</div>
+
+<main class="container">
+    <div class="content">
+        <div class="profile-container">
+            <div class="profile">
+                <div class="profile-image-container">
+                    <img class="profile-image" src="" alt="profile image">
+                </div>
+                <div class="profile-content">
+                    <h1 class="profile-name"></h1>
+                    <ul class="profile-info-list">
+                        <li class="profile-info">
+                            <p>Company: <span id="profile-info-company"></span></p>
+                        </li>
+                        <li class="profile-info">
+                            <p>Website/Blog: <span id="profile-info-blog"></span></p>
+                        </li>
+                        <li class="profile-info">
+                            <p>Location: <span id="profile-info-location"></span></p>
+                        </li>
+                        <li class="profile-info">
+                            <p>Member Since: <span id="profile-info-since"></span></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="profile-buttons">
+                <a class="profile-button" id="view-profile-button">View Profile</a>
+                <ul class="profile-counter-list">
+                    <li class="profile-counter" id="profile-public-repos-counter">
+                        <p>Public Repos: <span id="profile-public-repos-count"></span></p>
+                    </li>
+                    <li class="profile-counter" id="profile-public-gists-counter">
+                        <p>Public Gists: <span id="profile-public-gists-count"></span></p>
+                    </li>
+                    <li class="profile-counter" id="profile-followers-counter">
+                        <p>Followers: <span id="profile-followers-count"></span></p>
+                    </li>
+                    <li class="profile-counter" id="profile-followings-counter">
+                        <p>Following: <span id="profile-following-count"></span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="repo-container">
+            <h1 class="repo-list-title">Latest Repos</h1>
+            <ul class="repo-list">
+            </ul>
+        </div>
+    </div>
+    <div class="user-not-found">
+        <h1>User Not Found !!!</h1>
+    </div>
+</main>
+<footer class="footer">
+    GitHubFinder
+</footer>
+
+<script src="script/script.js"></script>
+</body>
+</html>
